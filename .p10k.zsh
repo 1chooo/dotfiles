@@ -33,10 +33,12 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     os_icon               # os identifier
-	anaconda
-	context
+		anaconda
+		virtualenv							# python virtual environment (https://docs.python.org/3/library/venv.html)
+		context
     dir                     # current directory
     vcs                     # git status
+		command_execution_time
     # =========================[ Line #2 ]=========================
     newline                 # \n
     prompt_char             # prompt symbol
@@ -49,11 +51,11 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
-    #command_execution_time  # duration of the last command
+    # command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
-    virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
+    # virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
     #anaconda                # conda environment (https://conda.io/)
     pyenv                   # python environment (https://github.com/pyenv/pyenv)
     goenv                   # go environment (https://github.com/syndbg/goenv)
@@ -192,9 +194,14 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
   
-  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf17c'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf17c'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\ue795'
+  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf302'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\ue7c5 \ue796'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf302 \ue7c5'
 
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf121 \uf0f4'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf121'
 
 
   ################################[ prompt_char: prompt symbol ]################################

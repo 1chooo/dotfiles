@@ -39,9 +39,9 @@ set wrap
 set cindent
 
 syntax on
-set tabstop=4 
-set softtabstop=4 
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2 
+set shiftwidth=2
 
 set mouse=a
 let g:NERDTreeMouseMode=3
@@ -51,5 +51,24 @@ set showmatch
 set t_Co=256
 
 set hlsearch
+
+
+
+nmap <F5> :call CompileRun()<CR>
+func! CompileRun()
+        exec "w"
+if &filetype == 'python'
+            exec "!time python3 %"
+elseif &filetype == 'java'
+            exec "!javac %"
+            exec "!time java %<"
+elseif &filetype == 'cpp'
+						exec "!runc %"
+elseif &filetype == 'c'
+						exec "!runc %"
+elseif &filetype == 'sh'
+            :!time bash %
+endif
+    endfunc
 
 
