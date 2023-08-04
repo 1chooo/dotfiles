@@ -52,23 +52,39 @@ set t_Co=256
 
 set hlsearch
 
-
-
+" run .py, .c, .cpp, .sh in vim
 nmap <F5> :call CompileRun()<CR>
+
+" Define a function to return the path of the virtual environment if it exists
+function! GetVenvPath()
+    " get the current directory
+    let l:current_dir = expand('%:p:h')
+    let l:current_dir_name = fnamemodify(l:current_dir, ':t')
+    let l:venv_path = l:current_dir . '/' . l:current_dir_name . '-virtualenv/bin/python3'
+    if filereadable(l:venv_path)
+        return l:venv_path
+    else
+        return 'python3'
+    endif
+endfunction
+
 func! CompileRun()
-        exec "w"
-if &filetype == 'python'
-            exec "!time python3 %"
-elseif &filetype == 'java'
-            exec "!javac %"
-            exec "!time java %<"
-elseif &filetype == 'cpp'
-						exec "!runc %"
-elseif &filetype == 'c'
-						exec "!runc %"
-elseif &filetype == 'sh'
-            :!time bash %
-endif
-    endfunc
+    exec "w"
+    if &filetype == 'python'
+        " use the python interpreter from the virtual environment if it exists
+        let l:python_interpreter = GetVenvPath()
+        exec "!time " . l:python_interpreter . " %"
+    elseif &filetype == 'java'
+        exec "!javac %"
+        exec "!time java %<"
+    elseif &filetype == 'cpp'
+        exec "!runc %"
+    elseif &filetype == 'c'
+        exec "!runc %"
+    elseif &filetype == 'sh'
+        :!time bash %
+    endif
+endfunc
+
 
 
