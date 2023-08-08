@@ -52,22 +52,25 @@ set t_Co=256
 
 set hlsearch
 
-" run .py, .c, .cpp, .sh in vim
 nmap <F5> :call CompileRun()<CR>
-
 " Define a function to return the path of the virtual environment if it exists
 function! GetVenvPath()
     " get the current directory
     let l:current_dir = expand('%:p:h')
     let l:current_dir_name = fnamemodify(l:current_dir, ':t')
-    let l:venv_path = l:current_dir . '/' . l:current_dir_name . '-virtualenv/bin/python3'
-    if filereadable(l:venv_path)
+    let l:venv_path_dot = l:current_dir . '/.venv/bin/python3'
+    let l:venv_path = l:current_dir . '/venv/bin/python3'
+    let l:venv_path_alternative = l:current_dir . '/' . l:current_dir_name . '-virtualenv/bin/python3'
+    if filereadable(l:venv_path_dot)
+        return l:venv_path_dot
+    elseif filereadable(l:venv_path)
         return l:venv_path
+    elseif filereadable(l:venv_path_alternative)
+        return l:venv_path_alternative
     else
         return 'python3'
     endif
 endfunction
-
 func! CompileRun()
     exec "w"
     if &filetype == 'python'
@@ -77,10 +80,10 @@ func! CompileRun()
     elseif &filetype == 'java'
         exec "!javac %"
         exec "!time java %<"
-    elseif &filetype == 'cpp'
-        exec "!runc %"
+	elseif &filetype == 'cpp'
+        exec "!time runc %"
     elseif &filetype == 'c'
-        exec "!runc %"
+        exec "!time runc %"
     elseif &filetype == 'sh'
         :!time bash %
     endif
