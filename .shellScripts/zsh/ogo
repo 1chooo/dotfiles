@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+local remote_url=$(git config --get remote.origin.url)
+
+if [[ $remote_url == *"github.com"* ]]; then
+# Convert SSH URL to HTTPS URL
+remote_url=${remote_url/git@github.com:/https:\/\/github.com\/}
+remote_url=${remote_url/\.git/}
+
+# Open the URL in the default browser
+open "$remote_url"
+else
+echo "Remote origin is not a GitHub repository."
+
+fi 
+
