@@ -71,7 +71,7 @@ function! GetVenvPath()
         return 'python3'
     endif
 endfunction
-func! CompileRun()
+function! CompileRun()
     exec "w"
     if &filetype == 'python'
         " use the python interpreter from the virtual environment if it exists
@@ -87,7 +87,7 @@ func! CompileRun()
     elseif &filetype == 'sh'
         :!time bash %
     endif
-endfunc
+endfunction
 
 
 

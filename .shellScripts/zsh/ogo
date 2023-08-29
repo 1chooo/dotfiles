@@ -13,4 +13,3 @@ else
 echo "Remote origin is not a GitHub repository."
 
 fi 
-

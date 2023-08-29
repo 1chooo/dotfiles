@@ -13,8 +13,12 @@ my-dotfile
 ```
 
 
-- [Vim](#vim)
-- [oh-my-zsh](#oh-my-zsh)
+- [My Shell Setting](#my-shell-setting)
+  - [Vim](#vim)
+    - [press `<f5>` to execute the code](#press-f5-to-execute-the-code)
+  - [oh-my-zsh](#oh-my-zsh)
+  - [Shell Scripts](#shell-scripts)
+    - [Compile c/cpp](#compile-ccpp)
 
 ## Vim
 
@@ -31,9 +35,9 @@ elseif &filetype == 'java'
   exec "!javac %"
   exec "!time java %<"
 elseif &filetype == 'cpp'
-	exec "!runc %"
+  exec "!runc %"
 elseif &filetype == 'c'
-	exec "!runc %"
+  exec "!runc %"
 elseif &filetype == 'sh'
   :!time bash %
 endif

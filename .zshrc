@@ -286,7 +286,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 #typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 
-export PATH="/Users/linchunho/.shellScripts/zsh:$PATH"
+export PATH="/Users/$USER/.shellScripts/zsh:$PATH"
 
 
 [ -d "$HOME/Library/Android/sdk" ] && ANDROID_HOME=$HOME/Library/Android/sdk || ANDROID_HOME=$HOME/Android/Sdk
