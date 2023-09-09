@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Delete the local branch 'ho-dev'
+git branch -d ho-dev
+
+# Create a new local branch 'ho-dev' and switch to it
+git checkout -b ho-dev
+
+# Push the 'ho-dev' branch to the remote 'origin'
+git push origin ho-dev
+
+# Switch back to the 'main' branch
+git checkout main
+
+# open the origin branch github page
+ogo
+
+# Sleep for 2 minutes (120 seconds)
+sleep 120
+
+# Fetch changes from the upstream repository
+git fetch upstream
+
+# Merge changes from 'upstream/main' into the current branch
+git merge upstream/main
