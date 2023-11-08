@@ -17,7 +17,7 @@ git push origin ho-dev
 git checkout main
 
 # open the origin branch github page
-local remote_url=$(git config --get remote.origin.url)
+remote_url=$(git config --get remote.origin.url)
 
 if [[ $remote_url == *"github.com"* ]]; then
 # Convert SSH URL to HTTPS URL
