@@ -38,4 +38,5 @@ sleep 120
 git fetch upstream
 
 # Merge changes from 'upstream/main' into the current branch
+
 git merge upstream/main
