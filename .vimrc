@@ -52,6 +52,7 @@ set t_Co=256
 
 set hlsearch
 
+
 nmap <F5> :call CompileRun()<CR>
 " Define a function to return the path of the virtual environment if it exists
 function! GetVenvPath()
@@ -88,6 +89,3 @@ function! CompileRun()
         :!time bash %
     endif
 endfunction
-
-
-

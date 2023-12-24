@@ -21,22 +21,22 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="/anaconda3/bin":$PATH
+# export PATH="/anaconda3/bin":$PATH
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/linchunho/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/linchunho/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/linchunho/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/linchunho/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/Users/linchunho/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/linchunho/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/linchunho/opt/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/linchunho/opt/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 
 
@@ -298,3 +298,21 @@ echo "export PATH=$ANDROID_HOME/platform-tools:\$PATH" >> ~/`[[ $SHELL == *"zsh"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/linchunho/Developer/chatgpt-mac/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/linchunho/Developer/chatgpt-mac/node_modules/tabtab/.completions/electron-forge.zsh
+
+# Flutter
+export PATH="/Users/linchunho/Developer/flutter/bin:$PATH"
+
+# Android
+export ANDROID_SDK_ROOT="/Users/linchunho/Library/Android/sdk"
+
+# GO
+export PATH="$PATH:/usr/local/go/bin"
+
+alias docker="/Applications/Docker.app/Contents/Resources/bin/docker"
+#alias python="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
+export PATH="$PATH:/USR/LOCAL/opt/icu4c/bin"
+export PATH="$PATH:/USR/LOCAL/opt/icu4c/sbin"
+
+
+# edit ngrok.yml
+alias vingrok="vi /Users/linchunho/Library/Application\ Support/ngrok/ngrok.yml"

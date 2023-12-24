@@ -1,0 +1,170 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    // "python.autoComplete.extraPaths": [
+    // ],
+    "python.analysis.extraPaths": [],
+    "[cpp]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.tabSize": 4
+    },
+    "workbench.colorCustomizations": {},
+    "editor.language.brackets": [],
+    "json.schemas": [],
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true,
+        "suppressGitMissingWarning": true
+    },
+    "git.autofetch": true,
+    "git.terminalAuthentication": false,
+    "git.confirmSync": false,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && clang++ -std=c++17 -stdlib=libc++ $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out",
+        "c": "cd $dir && gcc -std=c11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        // "cpp": "cd $dir && clang++ -std=c++17 -stdlib=libc++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+        "python": "cd $dir && python3 -u $fileName",
+    },
+    "code-runner.languageIdToFileExtensionMap": {
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts",
+    },
+    "terminal.integrated.fontFamily": "\"Hack Nerd Font Mono\"",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.tabSize": 4,
+    "[c]": {
+        "editor.tabSize": 4
+        // "editor.wordBasedSuggestions": false,
+        // "editor.suggest.insertMode": "replace",
+        // "editor.semanticHighlighting.enabled": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.python",
+        // "gitlens.codeLens.symbolScopes": [
+        //     "!Module"
+        // ],
+        // "editor.wordBasedSuggestions": false
+    },
+    "[css]": {
+        "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.tabSize": 4
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotVerifyTags": true,
+    "notebook.lineNumbers": "on",
+    "files.maxMemoryForLargeFilesMB": 8192,
+    
+    // latex
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe*2",
+            "tools": [
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+      ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    // "terminal.external.osxExec": "iTerm2.app",
+    "terminal.external.osxExec": "iTerm.app",
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "workbench.colorTheme": "Xcode 11 Default Dark",
+    "code-runner.runInTerminal": true,
+    "githubPullRequests.pullBranch": "never",
+    "python.formatting.provider": "none",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "window.commandCenter": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": 1,
+    "dart.flutterSdkPath": "/Users/linchunho/Developer/flutter",
+}
