@@ -1,5 +1,4 @@
 {
-    "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "editor.bracketPairColorization.enabled": false,
     "workbench.startupEditor": "none",
     "editor.fontSize": 14,
@@ -18,10 +17,6 @@
     "workbench.colorCustomizations": {},
     "editor.language.brackets": [],
     "json.schemas": [],
-    "gitlens.advanced.messages": {
-        "suppressGitDisabledWarning": true,
-        "suppressGitMissingWarning": true
-    },
     "git.autofetch": true,
     "git.terminalAuthentication": false,
     "git.confirmSync": false,
@@ -36,7 +31,7 @@
         "powershell": ".ps1",
         "typescript": ".ts",
     },
-    "terminal.integrated.fontFamily": "\"Hack Nerd Font Mono\"",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "liveServer.settings.donotShowInfoMsg": true,
     "editor.tabSize": 4,
     "[c]": {
@@ -46,7 +41,13 @@
         // "editor.semanticHighlighting.enabled": true
     },
     "[javascript]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
     },
     "[python]": {
         "editor.tabSize": 4,
@@ -66,7 +67,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.donotVerifyTags": true,
     "notebook.lineNumbers": "on",
-    "files.maxMemoryForLargeFilesMB": 8192,
     
     // latex
     "latex-workshop.latex.recipes": [
@@ -148,15 +148,14 @@
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
+
+    
     // "terminal.external.osxExec": "iTerm2.app",
     "terminal.external.osxExec": "iTerm.app",
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
-    "C_Cpp.intelliSenseCacheSize": 0,
-    "workbench.colorTheme": "Xcode 11 Default Dark",
+    "workbench.colorTheme": "Nord",
     "code-runner.runInTerminal": true,
-    "githubPullRequests.pullBranch": "never",
-    "python.formatting.provider": "none",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
@@ -164,7 +163,8 @@
         "scminput": false
     },
     "window.commandCenter": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "window.zoomLevel": 1,
-    "dart.flutterSdkPath": "/Users/linchunho/Developer/flutter",
+    "aws.telemetry": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "application.shellEnvironmentResolutionTimeout": 15,
 }
