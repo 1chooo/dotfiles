@@ -1,12 +1,11 @@
 {
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -2 }",
     "editor.bracketPairColorization.enabled": false,
     "workbench.startupEditor": "none",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
-    // "python.autoComplete.extraPaths": [
-    // ],
     "python.analysis.extraPaths": [],
     "[cpp]": {
         "editor.wordBasedSuggestions": "off",
@@ -49,14 +48,11 @@
     "[typescriptreact]": {
         "editor.tabSize": 2
     },
+    "notebook.formatOnSave.enabled": true,
     "[python]": {
         "editor.tabSize": 4,
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.python",
-        // "gitlens.codeLens.symbolScopes": [
-        //     "!Module"
-        // ],
-        // "editor.wordBasedSuggestions": false
+        // "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "[css]": {
         "editor.tabSize": 4
@@ -67,7 +63,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.donotVerifyTags": true,
     "notebook.lineNumbers": "on",
-    
     // latex
     "latex-workshop.latex.recipes": [
         {
@@ -143,13 +138,11 @@
         "*.fls",
         "*.log",
         "*.fdb_latexmk"
-      ],
+    ],
     "latex-workshop.view.pdf.viewer": "tab",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-
-    
     // "terminal.external.osxExec": "iTerm2.app",
     "terminal.external.osxExec": "iTerm.app",
     "jupyter.interactiveWindow.creationMode": "perFile",
@@ -167,4 +160,7 @@
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "application.shellEnvironmentResolutionTimeout": 15,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
 }
