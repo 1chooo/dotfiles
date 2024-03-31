@@ -20,8 +20,8 @@
     "git.terminalAuthentication": false,
     "git.confirmSync": false,
     "code-runner.executorMap": {
-        "cpp": "cd $dir && clang++ -std=c++17 -stdlib=libc++ $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out",
-        "c": "cd $dir && gcc -std=c11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ -std=c++17 -stdlib=libc++ $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out && rm $dir$fileNameWithoutExt.out",
+        "c": "cd $dir && gcc -std=c11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
         // "cpp": "cd $dir && clang++ -std=c++17 -stdlib=libc++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
         "python": "cd $dir && python3 -u $fileName",
     },
@@ -33,11 +33,9 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "liveServer.settings.donotShowInfoMsg": true,
     "editor.tabSize": 4,
+    "editor.indentSize": 4,
     "[c]": {
-        "editor.tabSize": 4
-        // "editor.wordBasedSuggestions": false,
-        // "editor.suggest.insertMode": "replace",
-        // "editor.semanticHighlighting.enabled": true
+        "editor.tabSize": 4,
     },
     "[javascript]": {
         "editor.tabSize": 2
@@ -59,6 +57,13 @@
     },
     "[html]": {
         "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[markdown]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.donotVerifyTags": true,
@@ -143,8 +148,8 @@
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    // "terminal.external.osxExec": "iTerm2.app",
-    "terminal.external.osxExec": "iTerm.app",
+    "terminal.external.osxExec": "iTerm2.app",
+    // "terminal.external.osxExec": "iTerm.app",
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "workbench.colorTheme": "Nord",
@@ -160,7 +165,5 @@
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "application.shellEnvironmentResolutionTimeout": 15,
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
+    "cmake.showOptionsMovedNotification": false,
 }
