@@ -1,13 +1,11 @@
 {
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -2 }",
-    
     // Editor
     "editor.bracketPairColorization.enabled": false,
     "editor.fontSize": 14,
     "editor.language.brackets": [],
     "editor.tabSize": 4,
     "editor.indentSize": 4,
-    
     "files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
     "python.analysis.extraPaths": [],
@@ -17,14 +15,12 @@
         "editor.semanticHighlighting.enabled": true,
         "editor.tabSize": 4
     },
-    
     "json.schemas": [],
-
     // Git
     "git.autofetch": true,
     "git.terminalAuthentication": false,
     "git.confirmSync": false,
-
+    "git.path": "/usr/bin/git",
     // Code Runner
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
@@ -38,11 +34,9 @@
         "powershell": ".ps1",
         "typescript": ".ts",
     },
-
     // Live Server
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    
     "[c]": {
         "editor.tabSize": 4,
     },
@@ -74,29 +68,22 @@
         "editor.tabSize": 4,
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    
-    
     "notebook.lineNumbers": "on",
-
     // latex
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.view.pdf.viewer": "tab",
-
     // Terminal
-    "terminal.external.osxExec": "iTerm2.app",
+    "terminal.external.osxExec": "iTerm2",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontSize": 14,
-
     // Jupyter
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
-
     // workbench
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.colorCustomizations": {},
     "workbench.iconTheme": "material-icon-theme",
-    
     // GitHub Copilot
     "github.copilot.enable": {
         "*": true,
@@ -105,19 +92,24 @@
         "scminput": false,
         "log": true
     },
-
     // Window
     "window.commandCenter": false,
     "window.zoomLevel": 1,
-
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "application.shellEnvironmentResolutionTimeout": 15,
-
     // Dart
     "dart.flutterSdkPath": "/Users/hugolin/flutter",
-
     // CMake
     "cmake.configureOnOpen": true,
     "cmake.showOptionsMovedNotification": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "go.toolsManagement.autoUpdate": true,
+    "[mdx]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 100
+    },
+
+    // Markdown Preview Github Styles
+    "markdown-preview-github-styles.colorTheme": "dark"
 }
