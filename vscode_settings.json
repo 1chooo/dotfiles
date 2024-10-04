@@ -72,6 +72,7 @@
     // latex
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
     // Terminal
     "terminal.external.osxExec": "iTerm2",
     "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -109,7 +110,6 @@
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 100
     },
-
     // Markdown Preview Github Styles
     "markdown-preview-github-styles.colorTheme": "dark"
 }
