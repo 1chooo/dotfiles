@@ -80,6 +80,7 @@
     // Jupyter
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    // "diffEditor.hideUnchangedRegions.enabled": true,
     // workbench
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "GitHub Dark",
@@ -106,7 +107,12 @@
     "cmake.showOptionsMovedNotification": false,
     "github.copilot.editor.enableAutoCompletions": true,
     "go.toolsManagement.autoUpdate": true,
+    // Word Wrap
     "[mdx]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 100
+    },
+    "[latex]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 100
     },
