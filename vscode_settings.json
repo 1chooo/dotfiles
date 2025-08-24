@@ -20,7 +20,6 @@
     "git.autofetch": true,
     "git.terminalAuthentication": false,
     "git.confirmSync": false,
-    "git.path": "/usr/bin/git",
     // Code Runner
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
@@ -41,18 +40,22 @@
         "editor.tabSize": 4,
     },
     "[javascript]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[typescript]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[typescriptreact]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "notebook.formatOnSave.enabled": true,
     "[python]": {
         "editor.tabSize": 4,
         "editor.formatOnType": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
         // "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "[css]": {
@@ -71,8 +74,6 @@
     "notebook.lineNumbers": "on",
     // latex
     "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
     // Terminal
     "terminal.external.osxExec": "iTerm2",
     "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -80,6 +81,7 @@
     // Jupyter
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "C_Cpp.intelliSenseCacheSize": 0,
     // "diffEditor.hideUnchangedRegions.enabled": true,
     // workbench
     "workbench.startupEditor": "none",
@@ -94,21 +96,44 @@
         "scminput": false,
         "log": true
     },
-    // Window
-    "window.commandCenter": false,
-    "window.zoomLevel": 1,
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "application.shellEnvironmentResolutionTimeout": 15,
-    // Dart
-    "dart.flutterSdkPath": "/Users/hugolin/flutter",
-    // CMake
     "cmake.configureOnOpen": true,
     "cmake.showOptionsMovedNotification": false,
     "github.copilot.editor.enableAutoCompletions": true,
     "go.toolsManagement.autoUpdate": true,
     // Markdown Preview Github Styles
     "markdown-preview-github-styles.colorTheme": "dark",
-    // Editor Word Wrap
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "files.associations": {
+        "*.css": "css"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "workbench.navigationControl.enabled": false,
+    "diffEditor.codeLens": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-http-request-post-response.instructions.md": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-http-request-pre-request.instructions.md": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-collections-post-response.instructions.md": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-collections-pre-request.instructions.md": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-folder-post-response.instructions.md": true,
+        "/var/folders/r6/7l4wrzxn2b1536z06d9p994m0000gn/T/postman-folder-pre-request.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-collections-post-response.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-collections-pre-request.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-folder-post-response.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-folder-pre-request.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-http-request-post-response.instructions.md": true,
+        "/var/folders/3q/2s6_c7553wz6m3jfzp9pgkfw0000gn/T/postman-http-request-pre-request.instructions.md": true
+    },
+    "[mdx]": {
+        "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    },
+    "explorer.compactFolders": false,
+    "terminal.integrated.suggest.enabled": true,
+    "window.zoomLevel": 1,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "problems.autoReveal": false,
 }
