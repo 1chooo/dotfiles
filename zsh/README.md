@@ -15,3 +15,5 @@ After installation, pick a theme from the [Oh My Zsh themes list](https://github
 ZSH_THEME="josh"
 ```
 
+## Zsh Plugins
+
